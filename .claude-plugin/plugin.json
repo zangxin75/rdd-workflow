@@ -8,6 +8,5 @@
   "license": "MIT",
   "keywords": ["rdd", "tdd", "testing", "requirements", "workflow", "pytest"],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": "./commands/"
 }

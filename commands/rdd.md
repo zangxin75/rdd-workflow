@@ -1,6 +1,6 @@
 ---
 description: "Show RDD workflow status: requirement files, test coverage, pass rate, and next step suggestion"
-argument-hint: "[module name] to check specific module status
+argument-hint: "[module name] to check specific module status"
 ---
 
 # RDD Status Command
