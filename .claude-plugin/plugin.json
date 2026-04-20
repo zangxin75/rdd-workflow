@@ -1,0 +1,10 @@
+{
+  "name": "rdd-workflow",
+  "version": "1.0.0",
+  "description": "Requirement-Driven Development workflow: requirements tables to parameterized tests to verified code",
+  "author": {
+    "name": "RDD Team"
+  },
+  "license": "MIT",
+  "keywords": ["rdd", "tdd", "testing", "requirements", "workflow", "pytest"]
+}

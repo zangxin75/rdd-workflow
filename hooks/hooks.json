@@ -1,0 +1,28 @@
+{
+  "description": "RDD workflow enforcement: prevent code writes without requirements, check completion on session end",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/guard_source.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/guard_stop.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
